@@ -1,0 +1,51 @@
+#CONTATO {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background-color: #494949;
+  color: #fff;
+  align-items: center;
+}
+
+#CONTATO h1 {
+  padding: 20px 10px;
+  margin: 40px 20px;
+  font-size: 2.5rem;
+}
+
+.contatos {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 2rem;
+  justify-items: start;
+  gap: 10px;
+  margin: 40px 20px;
+}
+
+.numero {
+  position: relative;
+}
+.numero::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 53px;
+  height: 60px;
+  left: -50px;
+  top: -20px;
+  background: url("../img/telefone.svg");
+}
+
+.email {
+  position: relative;
+}
+
+.email::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 61px;
+  height: 61px;
+  left: -60px;
+  top: -5px;
+  background: url("../img/gmail.svg");
+}

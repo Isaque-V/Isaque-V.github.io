@@ -1,0 +1,107 @@
+#HABILIDADES {
+  background-color: #adadad;
+  position: relative;
+  justify-items: center;
+}
+#HABILIDADES::after {
+  position: absolute;
+  display: flex;
+  content: "";
+  width: 96px;
+  height: 90px;
+  background: url("../img/efeito.svg");
+  left: 40px;
+  bottom: -48px;
+}
+.titulo-hab {
+  font-family: "Inria Serif";
+  color: #b6b6b6;
+  font-size: 7rem;
+}
+.hab {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 80px 40px 0 40px;
+  font-size: 2.8rem;
+  place-items: center;
+  gap: 2rem;
+}
+
+.hab-descricao {
+  color: #585656;
+  position: relative;
+}
+.hab-descricao::before {
+  position: absolute;
+  display: flex;
+  content: "";
+  height: 10px;
+  width: 25px;
+  top: -40px;
+  background: linear-gradient(#ff2f00, #9b3131);
+}
+.branco {
+  color: #e8e8e8;
+}
+
+.hab-menu li {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  text-align: center;
+  background: linear-gradient(#b4b4b4, #969696);
+  margin-bottom: 20px;
+  padding: 4rem 10rem;
+  border-radius: 10px;
+  gap: 2.5rem;
+  color: #3b3b3b;
+  border-color: #393939;
+}
+
+.hab-menu h2 {
+  grid-column: 1/-1;
+  font-family: "Inria Serif";
+  font-weight: bold;
+}
+.hab-menu p {
+  align-content: center;
+  width: 150px;
+  height: 80px;
+  padding: 4px 8px;
+  font-size: 2rem;
+  background-color: #d6d6d6;
+  border-color: #393939;
+  border-radius: 5px;
+}
+
+.p-figma {
+  grid-column: 1/-1;
+}
+
+.menu-front {
+  position: relative;
+}
+
+.menu-front::before {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  content: "";
+  left: 10px;
+  top: 10px;
+  background: url("../img/code.svg");
+}
+.menu-uxui {
+  position: relative;
+}
+.menu-uxui::before {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  content: "";
+  left: 15px;
+  top: 15px;
+  background: url("../img/design.svg") no-repeat;
+}
