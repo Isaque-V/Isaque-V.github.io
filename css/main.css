@@ -1,12 +1,6 @@
 #FORMAÇÕES {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-.apresentacao {
-  grid-column: 1/-1;
-  align-items: center;
-  display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 2fr;
 }
 
 .titulo {
@@ -19,6 +13,7 @@
 }
 
 .eu {
+  display: block;
   margin-left: 40px;
 }
 .titulo {
@@ -36,6 +31,9 @@
 .descricao strong {
   color: black;
 }
+.descricao-resumo {
+  display: none;
+}
 .formacao {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -50,8 +48,8 @@
 }
 
 .formacao-menu {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   place-items: center;
   text-align: center;
   padding: 9rem;
@@ -135,4 +133,210 @@
   margin-top: 20px;
   color: #797979;
   font-size: 1.3rem;
+}
+
+@media (max-width: 1350px) {
+  .titulo {
+    font-size: 6rem;
+    margin: 0px 90px;
+  }
+  .descricao {
+    font-size: 2.5rem;
+  }
+  .titulo-f {
+    font-size: 7rem;
+  }
+  .formacao-menu {
+    padding: 8.5rem;
+  }
+  .formacao-menu li {
+    padding: 3rem 2.5rem;
+  }
+  .formacao-menu .design {
+    padding: 3rem 5rem;
+  }
+  .formacao-menu .design::after {
+    display: none;
+  }
+  .formacao-menu .ti::after {
+    display: none;
+  }
+  .formacao-menu h3 {
+    font-size: 1.8rem;
+  }
+  .formacao-menu p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1250px) {
+  .titulo {
+    grid-column: 1 / -1;
+    font-size: 5.5rem;
+    margin: 0px 90px;
+  }
+  .eu {
+    display: none;
+  }
+  .descricao {
+    display: none;
+  }
+  .formacao {
+    grid-column: 1 / -1;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+  }
+  .titulo-f {
+    font-size: 6.5rem;
+  }
+  .formacao-menu {
+    padding: 6rem;
+  }
+  .formacao-menu li {
+    padding: 2.5rem 2rem;
+  }
+  .formacao-menu .design {
+    padding: 2.5rem 4.5rem;
+  }
+  .formacao-menu h3 {
+    font-size: 1.4rem;
+  }
+  .formacao-menu p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1100px) {
+  .titulo-f {
+    font-size: 4.5rem;
+  }
+  .formacao-menu {
+    padding: 5rem;
+  }
+  .formacao-menu h3 {
+    font-size: 1.2rem;
+  }
+  .formacao-menu li {
+    padding: 2rem 1.5rem;
+  }
+  .formacao-menu .design {
+    padding: 2rem 3.3rem;
+  }
+}
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  .titulo {
+    font-size: 4rem;
+  }
+  .titulo-f {
+    font-size: 5rem;
+  }
+  .formacao {
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+  .descricao {
+    text-align: center;
+    grid-column: 1/-1;
+    display: block;
+  }
+  .descricao-completa {
+    display: none;
+  }
+  .descricao-resumo {
+    display: block;
+  }
+  .formacao-menu {
+    background-color: transparent;
+  }
+  .formacao-menu h3 {
+    font-size: 2.5rem;
+  }
+  .formacao-menu p {
+    font-size: 1.5rem;
+  }
+  .design br {
+    display: none;
+  }
+  .titulo-f br {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .titulo {
+    font-size: 2.2rem;
+  }
+  .descricao {
+    font-size: 1.5rem;
+    margin: 20px 20px 0 20px;
+  }
+  .formacao {
+    margin: 0;
+  }
+  .titulo-f {
+    font-size: 2rem;
+  }
+
+  .formacao-menu {
+    display: block;
+    gap: 0.5rem;
+    background-color: #b3b2b2;
+  }
+  .formacao-menu .ti,
+  .formacao-menu .design {
+    align-items: center;
+    width: 120px;
+    height: 100px;
+    margin: 10px;
+    padding: 40px;
+  }
+  .formacao-menu h3 {
+    font-size: 1.2rem;
+  }
+  .formacao-menu p {
+    font-size: 1rem;
+  }
+  .formacao-menu .design::before,
+  .formacao-menu .ti::before {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .titulo {
+    font-size: 1.3rem;
+  }
+  .descricao {
+    font-size: 0.8rem;
+    margin: 10px 0;
+  }
+  .formacao {
+    margin: 0;
+  }
+  .titulo-f {
+    font-size: 1rem;
+  }
+
+  .formacao-menu {
+    display: block;
+    gap: 0.5rem;
+    background-color: #b3b2b2;
+  }
+  .formacao-menu .ti,
+  .formacao-menu .design {
+    align-items: center;
+    width: 100px;
+    height: 80px;
+    margin: 10px;
+    padding: 5px;
+  }
+  .formacao-menu h3 {
+    font-size: 0.8rem;
+  }
+  .formacao-menu p {
+    font-size: 0.6rem;
+  }
+  .formacao-menu .design::before,
+  .formacao-menu .ti::before {
+    display: none;
+  }
 }

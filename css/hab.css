@@ -105,3 +105,139 @@
   top: 15px;
   background: url("../img/design.svg") no-repeat;
 }
+
+@media (max-width: 1350px) {
+  .titulo-hab {
+    font-size: 6.5rem;
+  }
+  .hab {
+    font-size: 2.5rem;
+    gap: 1.5rem;
+  }
+  .hab-menu li {
+    padding: 3.5rem 9rem;
+  }
+  .hab-menu p {
+    width: 130px;
+    height: 80px;
+    padding: 4px 8px;
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1250px) {
+  .titulo-hab {
+    font-size: 6.5rem;
+  }
+  .hab {
+    font-size: 2.2rem;
+    gap: 1.5rem;
+  }
+  .hab-menu li {
+    padding: 3rem 8.5rem;
+  }
+  .hab-menu p {
+    width: 100px;
+    height: 60px;
+    padding: 2px 4px;
+    font-size: 1.3rem;
+  }
+  .hab-menu h2 {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 1100px) {
+  .hab-menu li {
+    padding: 3rem 8.5rem;
+  }
+  .hab-menu p {
+    width: 70px;
+    height: 60px;
+    padding: 2px 4px;
+  }
+}
+@media (max-width: 800px) {
+  #HABILIDADES::after {
+    display: none;
+  }
+  .titulo-hab {
+    font-size: 5rem;
+  }
+  .hab {
+    grid-template-columns: 1fr;
+    margin: 1rem 1rem 0 1rem;
+  }
+  .hab-descricao {
+    text-align: center;
+  }
+  .hab-descricao::before {
+    display: none;
+  }
+  .hab-menu {
+    margin-top: 10px;
+  }
+  .hab-menu li {
+    height: auto;
+    width: auto;
+    background: transparent;
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+  .hab {
+    grid-template-columns: 1fr;
+    margin: 1rem 1rem 0 1rem;
+  }
+  .hab-menu h2 {
+    font-size: 3rem;
+  }
+  .hab-menu p {
+    font-size: 2rem;
+    width: 140px;
+    height: auto;
+    padding: 10px;
+  }
+}
+@media (max-width: 650px) {
+  .titulo-hab {
+    font-size: 1.5rem;
+  }
+  .hab {
+    margin: 0.2rem 0.2rem 0 0.2rem;
+  }
+  .hab-descricao {
+    font-size: 0.8rem;
+  }
+  .hab-menu li {
+    height: auto;
+    width: auto;
+    background: transparent;
+    padding: 0px;
+    margin-bottom: 5px;
+    justify-content: center;
+  }
+  .hab-menu h2 {
+    font-size: 1rem;
+    margin-top: 0px;
+  }
+  .hab-menu p {
+    font-size: 0.6rem;
+    width: 40px;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .menu-front::before {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    content: "";
+    left: 10px;
+    top: 10px;
+    background: url("../img/code.svg");
+  }
+
+  .menu-uxui::before,
+  .menu-front::before {
+    display: none;
+  }
+}

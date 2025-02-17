@@ -49,3 +49,24 @@
   top: -5px;
   background: url("../img/gmail.svg");
 }
+@media (max-width: 800px) {
+  #CONTATO h1 {
+    font-size: 1.5rem;
+  }
+  .numero::before,
+  .email::before {
+    display: none;
+  }
+
+  .contatos {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 450px) {
+  #CONTATO h1 {
+    font-size: 1rem;
+  }
+  .contatos {
+    font-size: 0.6rem;
+  }
+}
